@@ -1,5 +1,6 @@
 num_students = int(input("How many students do you want to enter? "))
 
+# Initialize empty lists to store our data
 names = []
 scores = []
 
@@ -29,13 +30,13 @@ for i in range(len(scores)):
     else:
         failed_students.append(names[i])
 
-# Student Grade Tracker
+# Getting the total number of students from the user, i.e (Collecting Student Data)
+
 num_students = int(input("How many students do you want to enter? "))
 
 names = []
 scores = []
 
-# Collecting student data
 for i in range(num_students):
     print(f"\nStudent {i + 1}")
     name = input("Enter student name: ")
@@ -78,3 +79,4 @@ for student in passed_students:
 print("\nStudents Who Failed:")
 for student in failed_students:
     print(student)
+
